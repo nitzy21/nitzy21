@@ -1,0 +1,129 @@
+/* .card {
+	background-color: white;
+	color: #272727;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px;
+	border-color: #dbdbdb;
+	border-style: solid;
+	transition: 200ms;
+    max-width: 380px;
+    box-shadow: -5px 3px #dbdbdb;
+	
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.card-header {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.profile {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: tomato;
+	border-radius: 50%;
+	margin: 10px;
+	font-size: 20pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	justify-content: center;
+}
+
+.letter {
+	vertical-align: middle;
+}
+
+.card-title-group {
+	justify-content: center;
+}
+
+.card-title {
+	flex: 0.5;
+	font-size: large;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.card-date {
+	flex: 0.3;
+	font-size: small;
+	margin-top: 0;
+}
+
+.fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fill-image {
+	border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    height: 200px;
+}
+.card-like-icon {
+	height: 25px;
+	cursor: pointer;
+}
+
+.card-title {
+	width: 350px;
+	font-size: 1.8rem;
+    font-weight: bold;
+    text-align: justify;
+    color: #30408D;
+    margin-bottom: 2px;
+}
+
+.card-date {
+	width: 350px;
+	font-size: 1rem;
+    text-align: justify;
+    color: grey;
+    margin-bottom: 10px;
+}
+.card-text {
+	width: 100%;
+	font-size: medium;
+    text-align: justify;
+}
+
+.card-like-bar {
+	display: flex;
+	align-items: center;
+}
+
+.like-text {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.readMoreBtn{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border-color:  #30408D;
+    border-radius: 10px;
+    border-width: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #30408D;
+	cursor: pointer;
+
+}
+
+.bottomcontent{
+    margin-top: 20px;
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+} */

@@ -1,0 +1,169 @@
+.NavBarItems{
+    background: #30408D;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.NavBarItems a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-logo img {
+    display: block;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: auto; 
+}
+.titlesLogo{
+    display: inline-block;
+}
+ul{
+    padding-left: 15px;
+    list-style-type: none;
+}
+.navbar-title{
+    color: white;
+    text-align: start;
+    font-weight: bold;
+}
+.navbar-titlesub{
+    color: #F8D024;
+    text-align: start;
+    font-weight: bold;
+}
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 10px;
+  justify-content: end;
+  margin-right: 1rem;
+  width: 65vw;
+}
+.fa-bars{
+    padding-left: 20px;
+    color: white;
+}
+.fa-times{
+    padding-left: 20px;
+    color: white;
+}
+.cart-logo{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.nav-links{
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    background-color: grey;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+@media screen and (max-width: 1532px){
+    .NavBarItems{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1442px){
+    .NavBarItems{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1354px){
+    .NavBarItems{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1266px){
+    .NavBarItems{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1178px){
+    .NavBarItems{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    ul{
+        padding-left: 0px;
+    }
+    .NavBarItems{
+        position: relative;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 540px;
+        position: absolute;
+        top: 80px;
+        opacity: 1;
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background-color: grey;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .fa-bars{
+        font-size: 1.8rem;
+    }
+    .fa-times{
+        font-size: 1.8rem;
+    }
+    .cart-logo{
+        text-align: left;
+        margin-left: 1rem;
+        margin-bottom: 30px;
+    }
+    .menu-icon{
+        display: block;
+        margin-right: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 70%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        color: #000;
+        text-align: left;
+        padding: 1.5rem;
+        width: 90%;
+        display: table;
+    }
+    .nav-links:hover{
+        color: #000;
+        background-color: white;
+        border-radius: 0;
+    }
+    .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(2%, 20%);
+    }
+    .titlesLogo{
+        left: 10;
+        transform: translate(2%, 0%);
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,18 @@
+.heading1{
+    margin-top: 60px;
+    color: #30408D;
+    font-size: 3rem;
+    text-shadow: 2px 2px #e6e6e6;
+}
+
+.MainContainer{
+    max-width: 2100px;
+    height: 100vh;
+    margin: auto;
+}
+
+.mainContCard{
+    max-width: 1500px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
