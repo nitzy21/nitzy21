@@ -107,9 +107,23 @@
 	align-items: center;
 }
 
+.card-like-bars {
+	display: flex;
+	align-items: right;
+	margin-left: 70px;
+}
+.card-like-bars :hover {
+  
+	transition: 0.2s ease-out;
+	cursor: pointer;
+	color: #FF4C4C;
+	display: flex;
+	align-items: right;
+}
+
 
 .like-text {
-    margin-left: 10px;
+   
     font-size: 1.5rem;
 }
 

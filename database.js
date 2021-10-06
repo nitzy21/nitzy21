@@ -16,7 +16,7 @@ app.listen(3000, ()=>{
 const pool = createPool ({
     host: 'localhost',
     user: 'root',
-    password: 'password',
+    password: 'root',
     connectionLimit: 10,
 })
 
