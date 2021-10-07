@@ -50,10 +50,8 @@ const Products = ({ heading, heading1, data }) => {
                 <ProductDesc>{dateFormat(product.innovator_date, "mm/dd/yyyy")}</ProductDesc>
                 <ProductPrice>{product.innovator_story}</ProductPrice>
                 <ProductInfo1>
-                  <Link to='/story'>
-                    <ProductButton >{'Read More'}</ProductButton>
-                  </Link>
 
+                  <Link to={{ pathname: '/story', state: { title: product.innovator_title, name: product.innovator_fname + ' ' +product.innovator_lname, description: product.innovator_story, date: dateFormat(product.innovator_date, "mm/dd/yyyy")}}} >Read More</Link>
 
                   <Link to='/app' >
                     <ProductButton1 >

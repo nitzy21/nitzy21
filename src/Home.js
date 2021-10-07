@@ -3,13 +3,11 @@ import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router
 import { GlobalStyle } from './globalStyles';
 import Hero from './components/Hero';
 import Products from './components/Products/';
-import { productData, yearDataTwo } from './components/Products/data';
 import ListPage from './components/containers/ListPage';
 import Navbar from './components/NavBar/NavBar';
 import Footer from './components/Footer/footer';
 
 import InnovYear from './components/InnovYear';
-import { yearData } from './components/InnovYear/data';
 import App from './App';
 import { useState , useEffect} from "react";
 import Axios from 'axios';
@@ -38,8 +36,6 @@ function Home() {
         setFeaturedInnovs(response.data);      
       });
     }
-
-    // console.log(innovBest[0].innovator_picture);
 
 
 // var blob = innovBest[0].innovator_picture;
@@ -89,16 +85,10 @@ function Home() {
               // />
              })} */}
 
-        
-
-{/* <div> {innovBest[0].innovator_fname} </div> */}
-
-            <InnovYear heading='THE INNOVATOR OF THE YEAR' data={innovBest} />
-            {/* <InnovYear heading='THE INNOVATOR OF THE YEAR' data={yearData} /> */}
+      
+            <InnovYear heading='THE INNOVATOR OF THE YEAR' data={innovBest} />          
             <Products heading='FEATURED' heading1='INNOVATORS' data={featured} />
-            {/* <Products heading='FEATURED' heading1='INNOVATORS' data={yearDataTwo} /> */}
-            {/* <Feature /> */}
-            {/* <Route path='/' exact component={Innov} /> */}
+          
             <Footer />
         </Route>
 

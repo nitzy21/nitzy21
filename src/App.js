@@ -53,7 +53,8 @@ function App() {
               //  return <div> {val.innovator_fname} </div>
               return <Card
                 id={val.innovator_id}
-                title={val.innovator_fname + ' ' + val.innovator_lname}
+                title={val.innovator_title}
+                name={val.innovator_fname + ' ' + val.innovator_lname}
                 date={dateFormat(val.innovator_date, "mm/dd/yyyy")}
                 // image={val.innovator_picture}
                 image={pic1}
