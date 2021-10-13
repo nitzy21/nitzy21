@@ -1,16 +1,6 @@
 SELECT * FROM centie.innovators;
-
-SELECT MAX(innovator_like) FROM centie.innovators;
-
--- gets the row with highest likes
-SELECT  innovator_id, innovator_fname, innovator_lname, innovator_story, innovator_date, innovator_picture
-FROM centie.innovators
-WHERE innovator_like = (SELECT MAX(innovator_like) FROM centie.innovators) LIMIT 1;
-        
-SELECT  * FROM centie.innovators WHERE innovator_isTop = false LIMIT 3;
-
-UPDATE centie.innovators SET innovator_like = innovator_like + 1 WHERE innovator_id = 6;
-        
+ 
+-- modifies the datatype to int
 ALTER TABLE innovators
 MODIFY innovator_like INT;
 
@@ -30,6 +20,21 @@ VALUES('Emily', 'Yabut', 'Imagination is more important that knowledge. For know
 ('Roosevelt', 'Garcia', 'This is description 5','Innovator Title 5' , '2017-12-01', 0, false, "https://i.imgur.com/UYcHkKD.png"),
 ('Maga', 'Magadia', 'This is description 6','Innovator Title 6' , '2003-03-03', 0, false, "https://i.imgur.com/UYcHkKD.png");
 
+-- gets whoever has the highest likes
+SELECT MAX(innovator_like) FROM centie.innovators;
+
+-- gets the row with highest likes
+SELECT  innovator_id, innovator_fname, innovator_lname, innovator_story, innovator_date, innovator_picture
+FROM centie.innovators
+WHERE innovator_like = (SELECT MAX(innovator_like) FROM centie.innovators) LIMIT 1;
+
+-- gets three innovators for featured
+SELECT  * FROM centie.innovators WHERE innovator_isTop = false LIMIT 3;
+
+-- adds one like when heart button is clicked
+UPDATE centie.innovators SET innovator_like = innovator_like + 1 WHERE innovator_id = 6;
+
+-- update like numbers
 UPDATE centie.innovators SET innovator_like = 85 WHERE innovator_id = 3;
 UPDATE centie.innovators SET innovator_like = 77 WHERE innovator_id = 2;
 UPDATE centie.innovators SET innovator_like = 100 WHERE innovator_id = 1;
@@ -37,12 +42,14 @@ UPDATE centie.innovators SET innovator_like = 98 WHERE innovator_id = 4;
 UPDATE centie.innovators SET innovator_like = 50 WHERE innovator_id = 5;
 UPDATE centie.innovators SET innovator_like = 32 WHERE innovator_id = 6;
 
+-- update story
 UPDATE centie.innovators SET innovator_story = 'Description 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' WHERE innovator_id = 2;
 UPDATE centie.innovators SET innovator_story = 'Description 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' WHERE innovator_id = 3;
 UPDATE centie.innovators SET innovator_story = 'Description 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' WHERE innovator_id = 4;
 UPDATE centie.innovators SET innovator_story = 'Description 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' WHERE innovator_id = 5;
 UPDATE centie.innovators SET innovator_story = 'Description 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' WHERE innovator_id = 6;
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+-- (YOU DONT NEED TO RUN THIS CODE > ALTER USER BY PASSWORD)
+-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
 flush privileges;

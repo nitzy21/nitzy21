@@ -44,10 +44,13 @@ const InnovYear = ({ heading, data }) => {
                 
               </ProductInfo>
               <ProductInfo>
+
               {/* <ProductImg src={product.innovator_picture} alt={'Image'} /> */}
-              <ProductImg src={product3} alt={'Image'} />
-              
-               
+              {/* <ProductImg src={product3} alt={'Image'} /> */}
+
+              <ProductImg src="https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png" alt="Image"/>
+              {/* <ProductImg src={product.innovator_fname} alt="Image"/> */}
+
               </ProductInfo>
              
             </ProductCard>
